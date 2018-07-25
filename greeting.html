@@ -5,7 +5,7 @@
   </head>
 
   <body>
-  
+
     <div id="app"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/react-dom.development.js"></script>
@@ -24,8 +24,23 @@
 ReactDOM.render(
   <Greeting />, document.getElementById('app')
 );
-
     </script>
+<div id="intro"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/appbase-js/3.2.0/appbase.js"></script>
+
+class Introduction extends React.Component {
+render() {
+return (
+  <div>
+    <h2>Welcome to my new site!</h2>
+  </div>
+);
+}
+}
+
+ReactDOM.render(
+<Introduction />, document.getElementById('intro')
+);
 
   </body>
 
